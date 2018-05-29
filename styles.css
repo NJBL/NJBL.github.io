@@ -196,8 +196,8 @@ a {
   color: white;
 }
 .content {
-  padding-top: 10vh;
-  height: 75vh;
+  padding-top: 15vh;
+  height: 70vh;
   width: 75vw;
   font-size: calc(100% + 1vw);
 }
