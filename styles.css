@@ -240,7 +240,6 @@ a {
   font-size: calc(100% + 0.5vw);
   letter-spacing: 8px;
   cursor: pointer;
-  margin-left: -10vw;
 }
 .nav_wrapper {
   position: fixed;
@@ -280,7 +279,7 @@ a {
 }
 .content {
   padding-top: 15vh;
-  height: 70vh;
+  height: fit-content;
   width: 75vw;
   font-size: calc(100% + 1vw);
 }
@@ -295,6 +294,8 @@ a {
   letter-spacing: 5px;
   text-align: center;
   cursor: pointer;
+  margin-left: 10vw;
+  margin-top: 5vh;
 }
 .footer {
   position: absolute;
@@ -325,7 +326,7 @@ a {
 }
 
 .carousel-open:checked + .carousel-item {
-  position: static;
+  position: absolute;
   opacity: 100;
 }
 
