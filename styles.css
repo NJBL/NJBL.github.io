@@ -113,7 +113,6 @@
 
 
 
-
 html {
   scroll-behavior: smooth
 }
@@ -311,15 +310,6 @@ a {
   -webkit-transform: translateY( 0px);
   transform: translateY( 0px );
 }
-
-
-
-
-
-
-
-
-
 
 .carousel {
   position: relative;
