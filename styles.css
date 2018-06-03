@@ -208,7 +208,7 @@ a {
 }
 
 .title {
-  padding-top: 22vh;
+  padding-top: 18vh;
   padding-left: 10vw;
 }
 .title-headline {
@@ -230,16 +230,16 @@ a {
   color: white;
   display:inline-block;
   width:100%;
-  height:100%;
+  height:10vh;
   cursor: pointer;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 12vh;
 }
 .read-more {
   text-align: center;
   font-size: calc(100% + 0.5vw);
   letter-spacing: 8px;
   cursor: pointer;
+  padding-top: 8vh;
 }
 .nav_wrapper {
   position: fixed;
