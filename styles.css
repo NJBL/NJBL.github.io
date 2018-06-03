@@ -208,7 +208,7 @@ a {
 }
 
 .title {
-  padding-top: 18vh;
+  padding-top: 15vh;
   padding-left: 10vw;
 }
 .title-headline {
@@ -229,17 +229,15 @@ a {
 .anchor {
   color: white;
   display:inline-block;
-  width:100%;
-  height:10vh;
   cursor: pointer;
-  padding-top: 12vh;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
 }
 .read-more {
   text-align: center;
-  font-size: calc(100% + 0.5vw);
+  font-size: calc(100%);
   letter-spacing: 8px;
   cursor: pointer;
-  padding-top: 8vh;
 }
 .nav_wrapper {
   position: fixed;
@@ -278,10 +276,11 @@ a {
   color: white;
 }
 .content {
-  padding-top: 15vh;
+  padding-top: 25vh;
   height: fit-content;
   width: 75vw;
   font-size: calc(100% + 1vw);
+  padding-bottom: 10vh;
 }
 .content-header {
   padding-top: 15vh;
