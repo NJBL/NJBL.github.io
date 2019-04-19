@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Neon';
+  src: url('NEON____.TTF');
+}
+
 @keyframes move-background {
   0% {
 		-webkit-transform: translate3d(0px, 0px, 0px);
@@ -112,6 +117,39 @@
 }
 
 
+@keyframes neon { 
+  0%  { text-shadow: none; }
+  2% { text-shadow:   0 0 6px rgba(225,225,225,0.98),
+                      0 0 30px rgba(100, 200, 255, 0.42),
+                      0 0 12px rgba(100, 230, 255, 0.58),
+                      0 0 22px rgba(100,240,240,0.84),
+                      0 0 38px rgba(100,200,255,0.88),
+                      0 0 60px rgba(255,255,255,1);
+  }
+  90% { text-shadow:  0 0 6px rgba(225,225,225,0.98),
+                      0 0 30px rgba(100, 200, 255, 0.42),
+                      0 0 12px rgba(100, 230, 255, 0.58),
+                      0 0 22px rgba(100,240,240,0.84),
+                      0 0 38px rgba(100,200,255,0.88),
+                      0 0 60px rgba(255,255,255,1); 
+  }            
+  91%  { text-shadow: none; }
+  93% { text-shadow:   0 0 6px rgba(225,225,225,0.98),
+                        0 0 30px rgba(100, 200, 255, 0.42),
+                        0 0 12px rgba(100, 230, 255, 0.58),
+                        0 0 22px rgba(100,240,240,0.84),
+                        0 0 38px rgba(100,200,255,0.88),
+                        0 0 60px rgba(255,255,255,1); 
+  }
+  100% { text-shadow:   0 0 6px rgba(225,225,225,0.98),
+                        0 0 30px rgba(100, 200, 255, 0.42),
+                        0 0 12px rgba(100, 230, 255, 0.58),
+                        0 0 22px rgba(100,240,240,0.84),
+                        0 0 38px rgba(100,200,255,0.88),
+                        0 0 60px rgba(255,255,255,1); 
+  }
+}
+
 
 html {
   scroll-behavior: smooth
@@ -144,11 +182,11 @@ body {
   margin-left: -500vw;
 	height: 100%;
 	background: transparent url("./twinkling.png") repeat;
-  -moz-animation:move-background 30s linear infinite;
-  -ms-animation:move-background 30s linear infinite;
-  -o-animation:move-background 30s linear infinite;
-  -webkit-animation:move-background 30s linear infinite;
-  animation:move-background 30s linear infinite;
+  -moz-animation:move-background 20s linear infinite;
+  -ms-animation:move-background 20s linear infinite;
+  -o-animation:move-background 20s linear infinite;
+  -webkit-animation:move-background 20s linear infinite;
+  animation:move-background 20s linear infinite;
 }
 .hamburger {
   cursor: pointer;
@@ -206,6 +244,17 @@ a {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
 }
+.top-line {
+  border-top: 1px solid black;
+  height: 36px;
+  margin: auto;
+  text-align: center;
+  padding: 1vh;
+  width: 15%;
+}
+.icon-wrap {
+  margin:auto;
+}
 
 .title {
   padding-top: 15vh;
@@ -224,20 +273,24 @@ a {
   font-weight: 300;
   font-style: italic;
   text-transform: uppercase;
+  animation: neon 5s steps(6, start) infinite;
 }
 
 .anchor {
   color: white;
   display:inline-block;
   cursor: pointer;
-  padding-top: 5vh;
-  padding-bottom: 10vh;
+  padding-top: 10vh;
+  height: 100%;
+  width: 100%;
 }
 .read-more {
   text-align: center;
   font-size: calc(100%);
   letter-spacing: 8px;
   cursor: pointer;
+  height: 25vh;
+  width: 80vw;
 }
 .nav_wrapper {
   position: fixed;
@@ -247,8 +300,8 @@ a {
   position: fixed;
   padding: 5px;
   transform: rotate(45deg);
-  
 }
+
 .left {
   left: 2vw;
   border-bottom: 0.1em solid white;
@@ -277,7 +330,7 @@ a {
 }
 .content {
   padding-top: 25vh;
-  height: fit-content;
+  height: 100vh;
   width: 75vw;
   font-size: calc(100% + 1vw);
   padding-bottom: 10vh;
@@ -289,14 +342,65 @@ a {
   font-size: calc(100% + 1vw);
   width: 75vw;
 }
+footer {
+  -webkit-box-shadow: 0px -20px 20px 20px rgba(0,0,0,1);
+  -moz-box-shadow: 0px -20px 20px 20px rgba(0,0,0,1);
+  box-shadow: 0px -20px 20px 20px rgba(0,0,0,1);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 5vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.social {
+  height: 75%;
+  float: left;
+  margin-left: 2vw;
+  border-radius: 20px;
+  background: black;
+}
+
+.github .twitter .linkedin {
+  height: 75%;
+  float: left;
+  padding-left: 2vw;
+}
+.github:hover {
+  background: rgba(64, 120, 192, 0.82);
+  overflow: hidden;
+  z-index: 2;
+} 
+.twitter:hover {
+  background: rgba(85,172,238,0.82);
+  overflow: hidden;
+  z-index: 2;
+} 
+.linkedin:hover {
+  background: rgba(0,119,181,0.82);
+  overflow: hidden;
+  z-index: 2;
+}
+
 .back-to-top {
+  color: white;
   letter-spacing: 5px;
+  float: right;
+  font-size: calc(100%);
+  padding-right: 2vw;
+  padding-top: 1vh;
+  /* position: absolute;
+  
   text-align: center;
   cursor: pointer;
-  margin-left: 10vw;
-  margin-top: 5vh;
+  bottom: 10vh; */
+  /* padding-left: 10vw;
+  padding-top: 5vh;
+  padding-bottom: 10vh; */
 }
-.footer {
+/* .footer {
   position: absolute;
   width: 100%;
   color: white;
@@ -304,7 +408,7 @@ a {
 }
 .footer-item {
   text-align: center;
-}
+} */
 .read-more:target ~ .content {
   -webkit-transform: translateY( 0px);
   transform: translateY( 0px );
@@ -393,4 +497,34 @@ a {
 }
 .arrow-label {
   font-size: calc(40%);
+}
+
+.landing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index:9999;
+  color:white;
+  text-align: center;
+}
+
+.landing-title {
+  font-size: calc(100% + 12vw);
+  margin-top:30vh;
+  font-family: Neon;
+  animation: neon 5s steps(6, start) infinite;
+}
+
+.landing-click {
+  margin-top:10vh;
+  letter-spacing: 8px;
+}
+
+.post-landing {
+  display:none;
+}
+.show {
+  display: block;
 }

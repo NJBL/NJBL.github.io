@@ -11,4 +11,9 @@ window.onload = function(){
       window.scrollTo(0, 0);
     });
   });
+  document.onclick = function(){
+    document.querySelector('.post-landing').classList.remove("post-landing");
+    document.querySelector('footer').classList.add("show");
+    document.getElementById("landing").classList.add("post-landing");
+  }
 }
