@@ -33,7 +33,7 @@ $(document).ready(function(){
           }
         } else {
           $(".header").removeClass("shrunk");
-          $(".header-wrapper").addClass("shrunk");
+          $(".header-wrapper").removeClass("shrunk");
           
         }
 
